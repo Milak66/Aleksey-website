@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://avatars.mds.yandex.net/i?id=a415304bdb07cf99103c879b00d243d9_l-5222505-images-thumbs&n=13);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+h1 {
+    font-size: 60px;
+    background: linear-gradient(to left, red, black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.header, .conteaner {
+    display: flex;
+    justify-content: center;
+}
+.inputCheck {
+    width: 40%;
+    padding: 10px;
+    border: none;
+}
+.btn {
+    border: none;
+    background-color: crimson;
+    width: 45px;
+    padding: 20px;
+}
+.toDoAdded {
+    background: crimson;
+    list-style-type: none;
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border-bottom: 1px solid #cdc7be;
+}
+.toDoConteaner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.toDoCompleted {
+    background: #8fd9a8;
+    color: black;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 2s ease;
+} 

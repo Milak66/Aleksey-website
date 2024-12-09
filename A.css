@@ -1,0 +1,573 @@
+body {
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 200vh;
+  font-family: 'Exo', sans-serif;
+} 
+body.modal-open {
+  overflow: hidden; 
+}
+.justDiv {
+  display: flex;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 8%;
+  z-index: 10;
+  border: 2px rgba(0, 187, 255, 0.914) solid;
+}
+.start {
+  margin-right: auto;
+  margin-left: 1%;
+  margin-top: 1.4%;
+  color: white;
+  font-size: 20px;
+}
+.aboutAleksey {
+  margin: auto;
+  color: white;
+  font-size: 20px;
+}
+.worksOfSite {
+  margin-left: auto;
+  margin-right: 1%;
+  margin-top: 1.4%;
+  color: white;
+  font-size: 20px;
+}
+.startHere {
+  margin-right: auto;
+  margin-left: 10px;
+  margin-top: 5%;
+  color: rgba(0, 187, 255, 0.914);
+  font-size: 20px;
+  text-decoration: underline;
+}
+.aboutAlekseyHere {
+  margin: auto;
+  margin-top: 5%;
+  color: rgba(0, 187, 255, 0.914);
+  font-size: 20px;
+  text-decoration: underline;
+}
+.worksOfSiteHere {
+  margin-left: auto;
+  margin-top: 5%;
+  margin-right: 10px;
+  color: rgba(0, 187, 255, 0.914);
+  font-size: 20px;
+  text-decoration: underline;
+}
+#sayHelloToUser {
+  font-size: 40px;
+  color: rgba(0, 187, 255, 0.914);
+}
+.myName {
+  animation-duration: 1s;
+  animation-name: moveMyName;
+  font-size: 40px;
+  color: rgba(0, 187, 255, 0.914);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+}
+@keyframes moveMyName {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.mySite {
+  animation-duration: 2s;
+  animation-name: moveMyName;
+  font-size: 40px;
+  color: rgba(0, 187, 255, 0.914);
+}
+@keyframes moveMySite {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.gretting {
+  width: 100%;
+  height: 180px;
+  align-content: center;
+}
+.background {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.about {
+  background-color: rgb(21, 20, 20);
+  height: 500px;
+  align-content: center;
+}
+.moveSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: rgb(21, 20, 20);
+}
+.moveInfo {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(21, 20, 20);
+  height: 10vh;
+}
+.mySkils {
+  color: white;
+}
+.big {
+  font-size: 40px;
+  color: white;
+}
+.small {
+  font-size: 25px;
+  color: white;
+}
+.settings {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  background-color: rgb(21, 20, 20);
+}
+.slider {
+  width: 60%;
+}
+.back {
+  background-color: rgb(21, 20, 20);
+  width: 5%;
+  height: 10%;
+  margin-top: 8%;
+  font-size: 40px;
+  color: rgba(0, 187, 255, 0.914);
+  transform: rotate(-90deg);
+  border: none;
+}
+.next {
+  background-color: rgb(21, 20, 20);
+  width: 5%;
+  height: 10%;
+  margin-top: 8%;
+  font-size: 40px;
+  color: rgba(0, 187, 255, 0.914);
+  transform: rotate(90deg);
+  border: none;
+}
+.photo {
+  width: 60%;
+  height: 69%;
+}
+.thx {
+  font-size: 30px;
+}
+.remove {
+  font-size: 30px;
+}
+.sayThx {
+  font-size: 30px;
+}
+.modal-good {
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container {
+  display: none; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.modalGood {
+  background-color: #fff;
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  background-color: #fff;
+  width: 30%;
+  height: 30%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.star {
+  font-size: 50px;
+  background-color: white;
+  border: none;
+}
+.userRaiting {
+  display: flex;
+  align-content: center;
+  height: 140px;
+}
+.goldStar {
+  font-size: 60px;
+  background-color: white;
+  border: none;
+  color: rgb(255, 230, 0);
+}
+.close-button {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.close-buttonOfGoodModal {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 180px;
+}
+.myWorks {
+  background-color: rgb(21, 20, 20);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.targetDiv {
+  width: 100%;
+  height: 600px;
+  justify-content: space-evenly;
+  display: flex;
+  position: relative;
+  background-color: rgb(21, 20, 20);
+}
+.targetDiv2 {
+  width: 100%;
+  height: 600px;
+  justify-content: space-evenly;
+  display: flex;
+  position: relative;
+  background-color: rgb(21, 20, 20);
+}
+.leftDiv {
+  background-color: black;
+  width: 350px;
+  height: 450px;
+  transform: translateX(-150%);
+  animation: ani 1s forwards;
+}
+.leftDiv2 {
+  background-color: black;
+  width: 350px;
+  height: 450px;
+  transform: translateX(-150%);
+  animation: ani 1s forwards;
+}
+.rightDiv {
+  width: 350px;
+  height: 450px;
+  background-color: black;
+  transform: translateX(-150%);
+  animation: anii 1s forwards;
+}
+.rightDiv2 {
+  width: 350px;
+  height: 450px;
+  background-color: black;
+  transform: translateX(-150%);
+  animation: anii 1s forwards;
+}
+.text {
+  text-align: center; 
+  color: rgba(0, 187, 255, 0.914);; 
+}
+a {
+  text-decoration: none;
+}
+.textP {
+  text-align: center; 
+  color: rgba(0, 187, 255, 0.914);; 
+  font-size: 20px;
+}
+@keyframes ani {
+  0% {transform: translateX(-150%);}
+  100% {transform: translateY(0);}
+}
+@keyframes anii {
+  0% {transform: translateX(150%);}
+  100% {transform: translateY(0);}
+} 
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top:50vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: black;  
+    background: -webkit-linear-gradient(to left, black, black);  
+    width: 100%;
+    height:100vh;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 187, 255, 0.914);;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+@media all and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .start {
+  margin-top: 4.2%;
+  }
+  .worksOfSite {
+  margin-top: 4.2%;
+  }
+  .menuOfSite {
+    width: 100%;
+  }
+  .area {
+    width: 100%;
+    height: 75vh;
+  }
+  #sayHelloToUser {
+    font-size: 30px;
+  }
+  .myName {
+    font-size: 30px;
+  }
+  .mySite {
+    font-size: 30px;
+  }
+  .gretting {
+    width: 100%;
+  }
+  .background {
+    height: 75vh;
+  }
+  .circles {
+    height: 85%;
+    width: 100%;
+  }
+  .about {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .settings {
+    height: 300px;
+  }
+  .slider {
+    width: 60%;
+  }
+  .photo {
+    width: 60%;
+  }
+  .next {
+    font-size: 20px;
+  }
+  .back {
+    font-size: 20px;
+  }
+  .modal {
+    width: 50%;
+  }
+  .modalGood {
+    width: 50%;
+  }
+  .thx {
+    font-size: 21px;
+  }
+  .remove {
+    font-size: 21px;
+  }
+  .sayThx {
+    font-size: 21px;
+  }
+  .star {
+    font-size: 30px;
+  }
+  .goldStar {
+    font-size: 40px;
+  }
+  .leftDiv {
+    width: 100px;
+    height: 200px;
+  }
+  .rightDiv {
+    width: 100px;
+    height: 200px;
+  }
+  .leftDiv2 {
+    width: 100px;
+    height: 200px;
+  }
+  .rightDiv2 {
+    width: 100px;
+    height: 200px;
+  }
+  .divImg {
+    width: 100px;
+  }
+  .text, .textP {
+    font-size: 15px;
+  }
+  .targetDiv {
+    width: 100%;
+    height: 300px;
+  }
+  .targetDiv2 {
+    height: 300px;
+    width: 100%;
+  }
+}
